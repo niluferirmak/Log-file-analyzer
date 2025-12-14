@@ -1,0 +1,125 @@
+# ----------------------------------------------
+# Normal traffic (IP: 192.168.1.10 ve 10.0.0.5)
+# ----------------------------------------------
+192.168.1.10 - - [04/Dec/2025:10:00:01 +0300] "GET /index.html HTTP/1.1" 200 1234
+10.0.0.5 - - [04/Dec/2025:10:00:02 +0300] "GET /styles.css HTTP/1.1" 200 567
+192.168.1.10 - - [04/Dec/2025:10:00:03 +0300] "GET /js/script.js HTTP/1.1" 200 890
+10.0.0.5 - - [04/Dec/2025:10:00:04 +0300] "GET /images/logo.png HTTP/1.1" 200 450
+192.168.1.10 - - [04/Dec/2025:10:00:05 +0300] "GET /contact.html HTTP/1.1" 200 780
+10.0.0.5 - - [04/Dec/2025:10:00:06 +0300] "GET /about.html HTTP/1.1" 200 920
+192.168.1.10 - - [04/Dec/2025:10:00:07 +0300] "GET /products/item1.html HTTP/1.1" 200 1100
+10.0.0.5 - - [04/Dec/2025:10:00:08 +0300] "GET /products/item2.html HTTP/1.1" 200 1050
+192.168.1.10 - - [04/Dec/2025:10:00:09 +0300] "GET /cart.html HTTP/1.1" 200 1500
+10.0.0.5 - - [04/Dec/2025:10:00:10 +0300] "GET /checkout.html HTTP/1.1" 200 1800
+192.168.1.10 - - [04/Dec/2025:10:00:11 +0300] "GET /thankyou.html HTTP/1.1" 200 500
+
+# Repeated normal traffic (50 more lines)
+192.168.1.10 - - [04/Dec/2025:10:00:12 +0300] "GET /index.html HTTP/1.1" 200 1234
+10.0.0.5 - - [04/Dec/2025:10:00:13 +0300] "GET /styles.css HTTP/1.1" 200 567
+192.168.1.10 - - [04/Dec/2025:10:00:14 +0300] "GET /js/script.js HTTP/1.1" 200 890
+10.0.0.5 - - [04/Dec/2025:10:00:15 +0300] "GET /images/logo.png HTTP/1.1" 200 450
+192.168.1.10 - - [04/Dec/2025:10:00:16 +0300] "GET /contact.html HTTP/1.1" 200 780
+10.0.0.5 - - [04/Dec/2025:10:00:17 +0300] "GET /about.html HTTP/1.1" 200 920
+192.168.1.10 - - [04/Dec/2025:10:00:18 +0300] "GET /products/item1.html HTTP/1.1" 200 1100
+10.0.0.5 - - [04/Dec/2025:10:00:19 +0300] "GET /products/item2.html HTTP/1.1" 200 1050
+192.168.1.10 - - [04/Dec/2025:10:00:20 +0300] "GET /cart.html HTTP/1.1" 200 1500
+10.0.0.5 - - [04/Dec/2025:10:00:21 +0300] "GET /checkout.html HTTP/1.1" 200 1800
+192.168.1.10 - - [04/Dec/2025:10:00:22 +0300] "GET /thankyou.html HTTP/1.1" 200 500
+192.168.1.10 - - [04/Dec/2025:10:00:23 +0300] "GET /index.html HTTP/1.1" 200 1234
+10.0.0.5 - - [04/Dec/2025:10:00:24 +0300] "GET /styles.css HTTP/1.1" 200 567
+192.168.1.10 - - [04/Dec/2025:10:00:25 +0300] "GET /js/script.js HTTP/1.1" 200 890
+10.0.0.5 - - [04/Dec/2025:10:00:26 +0300] "GET /images/logo.png HTTP/1.1" 200 450
+192.168.1.10 - - [04/Dec/2025:10:00:27 +0300] "GET /contact.html HTTP/1.1" 200 780
+10.0.0.5 - - [04/Dec/2025:10:00:28 +0300] "GET /about.html HTTP/1.1" 200 920
+192.168.1.10 - - [04/Dec/2025:10:00:29 +0300] "GET /products/item1.html HTTP/1.1" 200 1100
+10.0.0.5 - - [04/Dec/2025:10:00:30 +0300] "GET /products/item2.html HTTP/1.1" 200 1050
+192.168.1.10 - - [04/Dec/2025:10:00:31 +0300] "GET /cart.html HTTP/1.1" 200 1500
+10.0.0.5 - - [04/Dec/2025:10:00:32 +0300] "GET /checkout.html HTTP/1.1" 200 1800
+192.168.1.10 - - [04/Dec/2025:10:00:33 +0300] "GET /thankyou.html HTTP/1.1" 200 500
+192.168.1.10 - - [04/Dec/2025:10:00:34 +0300] "GET /index.html HTTP/1.1" 200 1234
+10.0.0.5 - - [04/Dec/2025:10:00:35 +0300] "GET /styles.css HTTP/1.1" 200 567
+192.168.1.10 - - [04/Dec/2025:10:00:36 +0300] "GET /js/script.js HTTP/1.1" 200 890
+10.0.0.5 - - [04/Dec/2025:10:00:37 +0300] "GET /images/logo.png HTTP/1.1" 200 450
+192.168.1.10 - - [04/Dec/2025:10:00:38 +0300] "GET /contact.html HTTP/1.1" 200 780
+10.0.0.5 - - [04/Dec/2025:10:00:39 +0300] "GET /about.html HTTP/1.1" 200 920
+192.168.1.10 - - [04/Dec/2025:10:00:40 +0300] "GET /products/item1.html HTTP/1.1" 200 1100
+10.0.0.5 - - [04/Dec/2025:10:00:41 +0300] "GET /products/item2.html HTTP/1.1" 200 1050
+192.168.1.10 - - [04/Dec/2025:10:00:42 +0300] "GET /cart.html HTTP/1.1" 200 1500
+10.0.0.5 - - [04/Dec/2025:10:00:43 +0300] "GET /checkout.html HTTP/1.1" 200 1800
+192.168.1.10 - - [04/Dec/2025:10:00:44 +0300] "GET /thankyou.html HTTP/1.1" 200 500
+192.168.1.10 - - [04/Dec/2025:10:00:45 +0300] "GET /index.html HTTP/1.1" 200 1234
+10.0.0.5 - - [04/Dec/2025:10:00:46 +0300] "GET /styles.css HTTP/1.1" 200 567
+192.168.1.10 - - [04/Dec/2025:10:00:47 +0300] "GET /js/script.js HTTP/1.1" 200 890
+10.0.0.5 - - [04/Dec/2025:10:00:48 +0300] "GET /images/logo.png HTTP/1.1" 200 450
+192.168.1.10 - - [04/Dec/2025:10:00:49 +0300] "GET /contact.html HTTP/1.1" 200 780
+10.0.0.5 - - [04/Dec/2025:10:00:50 +0300] "GET /about.html HTTP/1.1" 200 920
+192.168.1.10 - - [04/Dec/2025:10:00:51 +0300] "GET /products/item1.html HTTP/1.1" 200 1100
+10.0.0.5 - - [04/Dec/2025:10:00:52 +0300] "GET /products/item2.html HTTP/1.1" 200 1050
+192.168.1.10 - - [04/Dec/2025:10:00:53 +0300] "GET /cart.html HTTP/1.1" 200 1500
+10.0.0.5 - - [04/Dec/2025:10:00:54 +0300] "GET /checkout.html HTTP/1.1" 200 1800
+192.168.1.10 - - [04/Dec/2025:10:00:55 +0300] "GET /thankyou.html HTTP/1.1" 200 500
+# (Total 55 lines of normal traffic)
+
+# ----------------------------------------------
+# ⚠️ Scenario 1: Brute-Force Attempt (IP: 45.32.1.8)
+# Consecutive 401 (Unauthorized) errors
+# ----------------------------------------------
+45.32.1.8 - - [04/Dec/2025:10:01:00 +0300] "POST /login HTTP/1.1" 401 150 
+45.32.1.8 - - [04/Dec/2025:10:01:01 +0300] "POST /login HTTP/1.1" 401 150 
+45.32.1.8 - - [04/Dec/2025:10:01:02 +0300] "POST /login HTTP/1.1" 401 150 
+45.32.1.8 - - [04/Dec/2025:10:01:03 +0300] "POST /login HTTP/1.1" 401 150 
+45.32.1.8 - - [04/Dec/2025:10:01:04 +0300] "POST /login HTTP/1.1" 401 150 
+45.32.1.8 - - [04/Dec/2025:10:01:05 +0300] "POST /login HTTP/1.1" 401 150 
+45.32.1.8 - - [04/Dec/2025:10:01:06 +0300] "POST /login HTTP/1.1" 401 150 
+45.32.1.8 - - [04/Dec/2025:10:01:07 +0300] "POST /login HTTP/1.1" 401 150 
+45.32.1.8 - - [04/Dec/2025:10:01:08 +0300] "POST /login HTTP/1.1" 401 150 
+45.32.1.8 - - [04/Dec/2025:10:01:09 +0300] "POST /login HTTP/1.1" 401 150 
+
+# ----------------------------------------------
+# ⚠️ Scenario 2: Rapid Scanning (IP: 203.0.113.5)
+# Various 404 (Not Found) errors
+# ----------------------------------------------
+203.0.113.5 - - [04/Dec/2025:10:01:10 +0300] "GET /admin/pma/ HTTP/1.1" 404 200
+203.0.113.5 - - [04/Dec/2025:10:01:11 +0300] "GET /wp-content/themes/vulnerabilities.txt HTTP/1.1" 404 200
+203.0.113.5 - - [04/Dec/2025:10:01:12 +0300] "GET /phpmyadmin/index.php HTTP/1.1" 404 200
+203.0.113.5 - - [04/Dec/2025:10:01:13 +0300] "GET /.env HTTP/1.1" 404 200
+203.0.113.5 - - [04/Dec/2025:10:01:14 +0300] "GET /backup/db.sql HTTP/1.1" 404 200
+203.0.113.5 - - [04/Dec/2025:10:01:15 +0300] "GET /robots.txt HTTP/1.1" 200 500 # 1 successful request
+203.0.113.5 - - [04/Dec/2025:10:01:16 +0300] "GET /admin/config.php HTTP/1.1" 404 200
+203.0.113.5 - - [04/Dec/2025:10:01:17 +0300] "GET /test/config.php HTTP/1.1" 404 200
+203.0.113.5 - - [04/Dec/2025:10:01:18 +0300] "GET /server-status HTTP/1.1" 403 120 # Forbidden request
+
+# ----------------------------------------------
+# ⚠️ Scenario 3: Server Issues (IP: 172.16.10.20)
+# 5xx errors
+# ----------------------------------------------
+172.16.10.20 - - [04/Dec/2025:10:01:20 +0300] "GET /data/api/v1 HTTP/1.1" 500 250
+172.16.10.20 - - [04/Dec/2025:10:01:21 +0300] "GET /data/api/v1 HTTP/1.1" 500 250
+172.16.10.20 - - [04/Dec/2025:10:01:22 +0300] "GET /data/api/v1 HTTP/1.1" 500 250
+
+# ----------------------------------------------
+# Normal Traffic Continues and Mixed Errors
+# ----------------------------------------------
+192.168.1.10 - - [04/Dec/2025:10:01:23 +0300] "GET /index.html HTTP/1.1" 200 1234
+10.0.0.5 - - [04/Dec/2025:10:01:24 +0300] "GET /styles.css HTTP/1.1" 200 567
+45.32.1.8 - - [04/Dec/2025:10:01:25 +0300] "GET /image.jpg HTTP/1.1" 200 300 # Brute-Force IP now making normal traffic
+# ----------------------------------------------
+# ⚠️ Scenario 4: High Volume Download (IP: 172.16.20.30)
+# Many requests from a single IP (threshold will exceed 50)
+# ----------------------------------------------
+172.16.20.30 - - [04/Dec/2025:10:01:30 +0300] "GET /asset/file_1.zip HTTP/1.1" 200 500000
+172.16.20.30 - - [04/Dec/2025:10:01:31 +0300] "GET /asset/file_2.zip HTTP/1.1" 200 500000
+# Add 30 more repetitions to complete 32 (Example threshold was 50. If you set the threshold to 30, it will be clearer.)
+# Add 30 more lines here with 172.16.20.30 making 200 status code requests.
+172.16.20.30 - - [04/Dec/2025:10:01:32 +0300] "GET /asset/file_3.zip HTTP/1.1" 200 500000
+# ... continues
+# Add 40 more lines (32+8) to reach over 100 lines.
+# ...
+
+# ----------------------------------------------
+# Results: 
+# Brute-Force IPs: 45.32.1.8 (401 errors)
+# Scanning IPs: 203.0.113.5 (404 errors)
+# High Request IPs: 172.16.20.30 (Based on threshold)
+# Server Errors: 172.16.10.20 (500 errors)
+# ----------------------------------------------
